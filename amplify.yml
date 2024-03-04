@@ -12,7 +12,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - REACT_APP_BACKEND_ENDPOINT=${REACT_APP_BACKEND_ENDPOINT}
+        - REACT_APP_BACKEND_ENDPOINT="https://j0g0pjtj4h.execute-api.us-east-1.amazonaws.com/prod"
         - npm run build
   artifacts:
     baseDirectory: build
